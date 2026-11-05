@@ -3262,3 +3262,68 @@ details[open] .chevron {
 .pied .conteneur {
   max-width: var(--largeur-baie);
 }
+
+.pied a {
+  color: var(--texte-doux);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pied a:hover {
+  color: var(--lien);
+}
+
+/* ======================== Mentions légales ======================== */
+/* Même alignement à gauche que les autres pages, lignes limitées pour la lecture */
+.mentions > * {
+  max-width: 52rem;
+}
+
+.mentions h3 {
+  margin: 2.25rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--trait);
+  font-size: 1.0625rem;
+  font-weight: 750;
+}
+
+.mentions .infos {
+  margin-top: 0;
+}
+
+.mentions .infos > div {
+  grid-template-columns: 13rem 1fr;
+}
+
+.mentions p,
+.mentions ul {
+  color: var(--texte-doux);
+}
+
+.mentions p + p,
+.mentions ul + p,
+.mentions p + ul {
+  margin-top: 0.75rem;
+}
+
+.mentions ul {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.mentions strong {
+  color: var(--texte);
+}
+
+.mentions-date {
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+  .mentions .infos > div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}

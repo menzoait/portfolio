@@ -1,4 +1,5 @@
 import { profil } from '../data.js'
+import { Lien } from '../routeur.jsx'
 
 export default function PiedDePage() {
   return (
@@ -6,7 +7,8 @@ export default function PiedDePage() {
       <div className="conteneur">
         <p>
           © {new Date().getFullYear()} {profil.prenom} {profil.nom}. Portfolio réalisé avec React et
-          hébergé sur Firebase.
+          hébergé sur Firebase ·{' '}
+          <Lien vers="/mentions-legales">Mentions légales</Lien>
         </p>
       </div>
     </footer>

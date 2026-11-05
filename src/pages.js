@@ -10,6 +10,7 @@ import Projets from './components/Projets.jsx'
 import Parcours from './components/Parcours.jsx'
 import Veille from './components/Veille.jsx'
 import Contact from './components/Contact.jsx'
+import MentionsLegales from './components/MentionsLegales.jsx'
 
 const avecAlternance = Boolean(alternance.entreprise)
 
@@ -113,6 +114,8 @@ export const pages = [
   },
   { chemin: '/veille', titre: 'Veille', u: 8, Composant: Veille, accroche: 'Comment je reste à jour' },
   { chemin: '/contact', titre: 'Contact', u: 9, Composant: Contact, accroche: 'On en parle ?' },
+  // Hors de la visite : accessible depuis le pied de page
+  { chemin: '/mentions-legales', titre: 'Mentions légales', u: 10, Composant: MentionsLegales, visite: false },
 ]
 
 // L'ordre de la visite : les pages ci-dessus, sans celles qui sont encore vides
