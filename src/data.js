@@ -636,15 +636,6 @@ export const projets = [
     code: `${depot}/calculateur-sous-reseaux`,
   },
   {
-    titre: "Dressing du matin",
-    icone: "cintre",
-    description:
-      "Une garde-robe qui propose trois tenues chaque matin selon la météo, montrées sur un mannequin 3D.",
-    technos: ["JavaScript", "WebGL", "API météo"],
-    site: `${pagesGithub}/dressing-du-matin/`,
-    code: `${depot}/dressing-du-matin`,
-  },
-  {
     titre: "Ligue des champions 2026-27",
     icone: "trophee",
     description:
