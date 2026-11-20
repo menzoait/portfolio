@@ -938,12 +938,19 @@ main > * {
   line-height: 1.25;
 }
 
+/* Un nom long (SRV-SAUVEGARDE) passe à la ligne après le tiret au lieu d'être coupé */
 .maq-noeud-texte strong {
-  overflow: hidden;
   font-size: 0.875rem;
   font-weight: 700;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-stretch: 92%;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 520px) {
+  .maq-noeud-texte strong {
+    font-size: 0.8125rem;
+    font-stretch: 80%;
+  }
 }
 
 .maq-noeud-texte small {
